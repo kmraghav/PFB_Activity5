@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <string>
 using namespace std;
@@ -15,6 +14,11 @@ int main()
 
     cout << "Enter your name: ";
     getline(cin, name);
+
+    if (name.empty()) {
+        cout << "Name cannot be empty!" << endl;
+        return 0;
+    }
 
     greet(name);
 
